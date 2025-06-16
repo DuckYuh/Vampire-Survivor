@@ -13,6 +13,12 @@ config_version=5
 config/name="Vampire Survivor"
 config/features=PackedStringArray("4.4", "Mobile")
 
+[display]
+
+window/size/viewport_width=750
+window/size/viewport_height=1334
+window/stretch/mode="viewport"
+
 [dotnet]
 
 project/assembly_name="Vampire Survivor"
