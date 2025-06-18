@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://3olf6eey80hu"]
+
+[ext_resource type="Script" uid="uid://fq1k2eyx65k3" path="res://Scripts/UI/custom.gd" id="1_6jat6"]
+[ext_resource type="Texture2D" uid="uid://dbfxh8uxlicty" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/leaf_ranger.png" id="2_vkjsa"]
+[ext_resource type="Texture2D" uid="uid://bh0tqjcj7xrj8" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/metal_bladekeeper.png" id="3_wnp3j"]
+[ext_resource type="Texture2D" uid="uid://b5dvhupl4jr0c" path="res://Assets/Spirtes/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/water_priestess.png" id="4_kh0ya"]
+[ext_resource type="Texture2D" uid="uid://dsja8x7bdttwj" path="res://Assets/Spirtes/fire_knight/fire_knight.png" id="5_jip3r"]
+
+[node name="Custom" type="Node2D"]
+script = ExtResource("1_6jat6")
+
+[node name="PlayButton" type="Button" parent="."]
+offset_left = 180.0
+offset_top = 1001.0
+offset_right = 580.0
+offset_bottom = 1201.0
+theme_override_font_sizes/font_size = 50
+text = "Play"
+
+[node name="Char1" type="TextureButton" parent="."]
+offset_left = 60.0
+offset_top = 200.0
+offset_right = 124.0
+offset_bottom = 264.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("2_vkjsa")
+
+[node name="Char2" type="TextureButton" parent="."]
+offset_left = 400.0
+offset_top = 200.0
+offset_right = 464.0
+offset_bottom = 264.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("3_wnp3j")
+
+[node name="Char3" type="TextureButton" parent="."]
+offset_left = 60.0
+offset_top = 500.0
+offset_right = 124.0
+offset_bottom = 564.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("4_kh0ya")
+
+[node name="Char4" type="TextureButton" parent="."]
+offset_left = 400.0
+offset_top = 500.0
+offset_right = 464.0
+offset_bottom = 564.0
+scale = Vector2(4, 4)
+texture_normal = ExtResource("5_jip3r")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 45.0
+offset_right = 715.0
+offset_bottom = 155.0
+theme_override_font_sizes/font_size = 80
+text = "Choose Character"
+horizontal_alignment = 1

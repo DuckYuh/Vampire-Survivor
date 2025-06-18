@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Vampire Survivor"
+run/main_scene="uid://d27arxge3fsxb"
 config/features=PackedStringArray("4.4", "Mobile")
 
 [display]
