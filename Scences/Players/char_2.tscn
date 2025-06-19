@@ -1,0 +1,94 @@
+[gd_scene load_steps=20 format=3 uid="uid://c36aohibcv8gj"]
+
+[ext_resource type="Script" uid="uid://r3herf7dbwei" path="res://Scripts/Players/player.gd" id="1_0810q"]
+[ext_resource type="Texture2D" uid="uid://c7ohj8fh7o5g0" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_1.png" id="1_jp0qh"]
+[ext_resource type="Texture2D" uid="uid://cwbtl0taq12fw" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_2.png" id="2_0810q"]
+[ext_resource type="Texture2D" uid="uid://cixsol6n5mr7a" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_3.png" id="3_5528y"]
+[ext_resource type="Texture2D" uid="uid://ic28aytvsn6g" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_4.png" id="4_38iyy"]
+[ext_resource type="Texture2D" uid="uid://da1py7kxq755e" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_5.png" id="5_ja07e"]
+[ext_resource type="Texture2D" uid="uid://dxg23fvaku5tp" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_6.png" id="6_31563"]
+[ext_resource type="Texture2D" uid="uid://5gnrc3ns7jb8" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_7.png" id="7_xgsv5"]
+[ext_resource type="Texture2D" uid="uid://cbp1eln78hd8w" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/01_idle/01_idle_8.png" id="8_qetce"]
+[ext_resource type="Texture2D" uid="uid://bx6fr48jmpibn" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_1.png" id="9_jftfb"]
+[ext_resource type="Texture2D" uid="uid://cyju7k2du8ape" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_2.png" id="10_ph8wk"]
+[ext_resource type="Texture2D" uid="uid://cm2pparpkqljc" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_3.png" id="11_oco8t"]
+[ext_resource type="Texture2D" uid="uid://c6u0ofoplyym6" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_4.png" id="12_1c2d4"]
+[ext_resource type="Texture2D" uid="uid://byeuc6kpqlw5t" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_5.png" id="13_h1404"]
+[ext_resource type="Texture2D" uid="uid://40pkm250qgeh" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_6.png" id="14_5ox4a"]
+[ext_resource type="Texture2D" uid="uid://rv85lbyq1bmy" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_7.png" id="15_xcxvq"]
+[ext_resource type="Texture2D" uid="uid://cunmw2fxrfbm2" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_8.png" id="16_hsbya"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kg1e4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_257dw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jp0qh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0810q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5528y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_38iyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ja07e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_31563")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xgsv5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qetce")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_jftfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ph8wk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_oco8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1c2d4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_h1404")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5ox4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xcxvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_hsbya")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="Char2" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_0810q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_kg1e4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -35)
+sprite_frames = SubResource("SpriteFrames_257dw")
+animation = &"run"

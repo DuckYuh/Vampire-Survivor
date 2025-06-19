@@ -14,6 +14,11 @@ config/name="Vampire Survivor"
 run/main_scene="uid://d27arxge3fsxb"
 config/features=PackedStringArray("4.4", "Mobile")
 
+[autoload]
+
+CharacterManager="*res://Autoload/characterManager.gd"
+ScoreManager="*res://Autoload/scoreManager.gd"
+
 [display]
 
 window/size/viewport_width=750

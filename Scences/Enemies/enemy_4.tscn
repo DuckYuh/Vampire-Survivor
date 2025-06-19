@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3 uid="uid://jgbarygqh4a8"]
+
+[ext_resource type="Texture2D" uid="uid://0vjf5tyk1fjs" path="res://Assets/Spirtes/Monsters_Creatures_Fantasy/Skeleton/Walk.png" id="1_boehb"]
+[ext_resource type="Script" uid="uid://157psuxd6q3t" path="res://Scripts/Enemies/enemy.gd" id="1_kxx8x"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s02yb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kxx8x"]
+atlas = ExtResource("1_boehb")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m217p"]
+atlas = ExtResource("1_boehb")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bkwfn"]
+atlas = ExtResource("1_boehb")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etf1y"]
+atlas = ExtResource("1_boehb")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_boehb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kxx8x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m217p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkwfn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etf1y")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="Enemy4" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_kxx8x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_s02yb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_boehb")
+animation = &"run"
