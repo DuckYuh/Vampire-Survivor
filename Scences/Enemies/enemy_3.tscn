@@ -1,0 +1,81 @@
+[gd_scene load_steps=13 format=3 uid="uid://bmimy71xbyjiq"]
+
+[ext_resource type="Texture2D" uid="uid://bex0x2v21tdpk" path="res://Assets/Spirtes/Monsters_Creatures_Fantasy/Mushroom/Run.png" id="1_q8pf7"]
+[ext_resource type="Script" uid="uid://157psuxd6q3t" path="res://Scripts/Enemies/enemy.gd" id="1_y40rl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iont0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y40rl"]
+atlas = ExtResource("1_q8pf7")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4k2b"]
+atlas = ExtResource("1_q8pf7")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vrdyo"]
+atlas = ExtResource("1_q8pf7")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_blycn"]
+atlas = ExtResource("1_q8pf7")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8kwd"]
+atlas = ExtResource("1_q8pf7")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_seq3h"]
+atlas = ExtResource("1_q8pf7")
+region = Rect2(750, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5x8t0"]
+atlas = ExtResource("1_q8pf7")
+region = Rect2(900, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ca2i2"]
+atlas = ExtResource("1_q8pf7")
+region = Rect2(1050, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q8pf7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y40rl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4k2b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vrdyo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_blycn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8kwd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_seq3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5x8t0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ca2i2")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="Enemy3" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_y40rl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_iont0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_q8pf7")
+animation = &"run"

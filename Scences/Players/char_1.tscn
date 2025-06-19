@@ -1,0 +1,120 @@
+[gd_scene load_steps=26 format=3 uid="uid://cxoejm1ccjx3k"]
+
+[ext_resource type="Script" uid="uid://r3herf7dbwei" path="res://Scripts/Players/player.gd" id="1_a4dfh"]
+[ext_resource type="Texture2D" uid="uid://dpl8j7oyqs2cw" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_1.png" id="1_s6jbu"]
+[ext_resource type="Texture2D" uid="uid://bcp64rxb5q6i0" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_2.png" id="2_a4dfh"]
+[ext_resource type="Texture2D" uid="uid://dy2v4ygkiom7v" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_3.png" id="3_hcw8a"]
+[ext_resource type="Texture2D" uid="uid://b320105cnw05w" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_4.png" id="4_3n74r"]
+[ext_resource type="Texture2D" uid="uid://do2m0exkq1f4o" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_5.png" id="5_tlxf7"]
+[ext_resource type="Texture2D" uid="uid://faats5ave1pg" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_6.png" id="6_7etoj"]
+[ext_resource type="Texture2D" uid="uid://co2s7ip3pw2wr" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_7.png" id="7_ptfmr"]
+[ext_resource type="Texture2D" uid="uid://d3jc4y01gunm4" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_8.png" id="8_lhmnd"]
+[ext_resource type="Texture2D" uid="uid://c0v0tde0qgh5g" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_9.png" id="9_av4rs"]
+[ext_resource type="Texture2D" uid="uid://ceoihtyrojxp8" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_10.png" id="10_r0l4q"]
+[ext_resource type="Texture2D" uid="uid://dehtp6p2wuq8u" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_11.png" id="11_8f6fe"]
+[ext_resource type="Texture2D" uid="uid://c4yg608fbeami" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/idle/idle_12.png" id="12_1wcmx"]
+[ext_resource type="Texture2D" uid="uid://cl7a8firmmm83" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_1.png" id="13_3vakq"]
+[ext_resource type="Texture2D" uid="uid://bqt0o67qprl46" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_2.png" id="14_tlp0p"]
+[ext_resource type="Texture2D" uid="uid://dkadt538px55c" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_3.png" id="15_cot4o"]
+[ext_resource type="Texture2D" uid="uid://dehlj2eg10yx5" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_4.png" id="16_skqqf"]
+[ext_resource type="Texture2D" uid="uid://cceebkyyekgb" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_5.png" id="17_u58h0"]
+[ext_resource type="Texture2D" uid="uid://fsjlf2by70lk" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_6.png" id="18_pbgm3"]
+[ext_resource type="Texture2D" uid="uid://d345yuo7imo0o" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_7.png" id="19_pan8n"]
+[ext_resource type="Texture2D" uid="uid://dfda2sn4783am" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_8.png" id="20_y2ffj"]
+[ext_resource type="Texture2D" uid="uid://cckj21ltoog0d" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_9.png" id="21_nix2a"]
+[ext_resource type="Texture2D" uid="uid://bp1ao1tam780p" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_10.png" id="22_rjkah"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kg1e4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kg1e4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s6jbu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_a4dfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hcw8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3n74r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tlxf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7etoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ptfmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_lhmnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_av4rs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_r0l4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8f6fe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1wcmx")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_3vakq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_tlp0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_cot4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_skqqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_u58h0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_pbgm3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_pan8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_y2ffj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_nix2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_rjkah")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="Char1" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_a4dfh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_kg1e4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -35)
+sprite_frames = SubResource("SpriteFrames_kg1e4")
+animation = &"run"
+frame = 2
+frame_progress = 0.488043

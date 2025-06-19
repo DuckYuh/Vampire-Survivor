@@ -57,3 +57,9 @@ offset_bottom = 155.0
 theme_override_font_sizes/font_size = 80
 text = "Choose Character"
 horizontal_alignment = 1
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Char1" to="." method="_on_char_1_pressed"]
+[connection signal="pressed" from="Char2" to="." method="_on_char_2_pressed"]
+[connection signal="pressed" from="Char3" to="." method="_on_char_3_pressed"]
+[connection signal="pressed" from="Char4" to="." method="_on_char_4_pressed"]
