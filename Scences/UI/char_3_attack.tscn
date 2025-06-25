@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cp7im18d54co0"]
+
+[ext_resource type="Script" uid="uid://c1byndpclgikb" path="res://Scripts/UI/bullet.gd" id="1_kbsi5"]
+[ext_resource type="Texture2D" uid="uid://dh3iee186gbcl" path="res://Assets/Spirtes/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/10_sp_atk/sp_atk_9.png" id="1_wxv7k"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbsi5"]
+atlas = ExtResource("1_wxv7k")
+region = Rect2(144, 42, 144, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_54w8n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbsi5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_447en"]
+radius = 17.4642
+
+[node name="Char3_Attack" type="Area2D"]
+script = ExtResource("1_kbsi5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(15, 0)
+sprite_frames = SubResource("SpriteFrames_54w8n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_447en")
