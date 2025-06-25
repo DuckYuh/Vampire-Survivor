@@ -69,7 +69,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Enemy1" type="CharacterBody2D"]
+[node name="Enemy1" type="CharacterBody2D" groups=["enemies"]]
 scale = Vector2(2, 2)
 script = ExtResource("1_bv4uw")
 

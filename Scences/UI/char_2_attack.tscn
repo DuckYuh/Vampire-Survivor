@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://ddv620grl6ufe"]
+
+[ext_resource type="Texture2D" uid="uid://ciwjnwy3obqx2" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/projectile_and_trap/projectile_throw/projectile_throw.png" id="1_03024"]
+[ext_resource type="Script" uid="uid://c1byndpclgikb" path="res://Scripts/UI/bullet.gd" id="2_52684"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_52684"]
+atlas = ExtResource("1_03024")
+region = Rect2(0, 0, 80, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5osbo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_52684")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_187v7"]
+
+[node name="Char2_Attack" type="Area2D"]
+script = ExtResource("2_52684")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5osbo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_187v7")

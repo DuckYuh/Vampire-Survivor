@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://bpy2ba2ft6827"]
+
+[ext_resource type="Texture2D" uid="uid://bs3u4hvt8yatw" path="res://Assets/Spirtes/fire_knight/07_3_atk/3_atk_23.png" id="1_0hgfs"]
+[ext_resource type="Script" uid="uid://c1byndpclgikb" path="res://Scripts/UI/bullet.gd" id="1_nyqyr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nyqyr"]
+atlas = ExtResource("1_0hgfs")
+region = Rect2(171, 64, 57, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6e5hm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nyqyr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkg5"]
+size = Vector2(69, 20)
+
+[node name="Char4_Attack" type="Area2D"]
+script = ExtResource("1_nyqyr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 0.820305
+sprite_frames = SubResource("SpriteFrames_6e5hm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4.5, 0)
+shape = SubResource("RectangleShape2D_dqkg5")
