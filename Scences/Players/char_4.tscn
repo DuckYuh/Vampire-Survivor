@@ -19,6 +19,8 @@
 [ext_resource type="Texture2D" uid="uid://dv8ng8g6tle4a" path="res://Assets/Spirtes/fire_knight/02_run/run_8.png" id="16_pxyif"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kg1e4"]
+radius = 11.5
+height = 45.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sorv0"]
 animations = [{
@@ -89,6 +91,8 @@ script = ExtResource("1_cpd14")
 shape = SubResource("CapsuleShape2D_kg1e4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -35)
+position = Vector2(0, -40)
 sprite_frames = SubResource("SpriteFrames_sorv0")
 animation = &"run"
+
+[node name="Camera2D" type="Camera2D" parent="."]

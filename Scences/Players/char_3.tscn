@@ -21,6 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://prm77cxx66sj" path="res://Assets/Spirtes/Elementals_water_priestess_FREE_v1.1/Elementals_water_priestess_FREE_v1.1/png/02_walk/walk_10.png" id="18_7qvwd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kg1e4"]
+height = 39.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uno6w"]
 animations = [{
@@ -97,7 +98,9 @@ script = ExtResource("1_r371p")
 shape = SubResource("CapsuleShape2D_kg1e4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -35)
+position = Vector2(0, -40)
 sprite_frames = SubResource("SpriteFrames_uno6w")
 animation = &"run"
 frame_progress = 0.760698
+
+[node name="Camera2D" type="Camera2D" parent="."]

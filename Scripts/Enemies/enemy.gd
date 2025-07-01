@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 const SPEED = 100.0
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta) -> void:
 	var player = get_nearest_player()
 	var direction = (player.position - position).normalized()
 	velocity = direction * SPEED
