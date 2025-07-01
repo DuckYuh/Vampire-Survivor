@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://bp1ao1tam780p" path="res://Assets/Spirtes/Elementals_Leaf_ranger_Free_v1.0/Elementals_Leaf_ranger_Free_v1.0/animations/PNG/run/run_10.png" id="22_rjkah"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kg1e4"]
+height = 39.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kg1e4"]
 animations = [{
@@ -113,8 +114,10 @@ script = ExtResource("1_a4dfh")
 shape = SubResource("CapsuleShape2D_kg1e4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -35)
+position = Vector2(0, -40)
 sprite_frames = SubResource("SpriteFrames_kg1e4")
 animation = &"run"
 frame = 2
 frame_progress = 0.488043
+
+[node name="Camera2D" type="Camera2D" parent="."]

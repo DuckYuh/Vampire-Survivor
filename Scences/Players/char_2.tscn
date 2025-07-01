@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://cunmw2fxrfbm2" path="res://Assets/Spirtes/Elementals_metal_bladekeeper_FREE_v1.1/Elementals_metal_bladekeeper_FREE_v1.1/PNG animations/02_run/02_run_8.png" id="16_hsbya"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kg1e4"]
+height = 43.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_257dw"]
 animations = [{
@@ -89,6 +90,8 @@ script = ExtResource("1_0810q")
 shape = SubResource("CapsuleShape2D_kg1e4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -35)
+position = Vector2(0, -40)
 sprite_frames = SubResource("SpriteFrames_257dw")
 animation = &"run"
+
+[node name="Camera2D" type="Camera2D" parent="."]

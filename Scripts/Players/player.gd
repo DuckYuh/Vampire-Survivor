@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var camera = $Camera2D
 @onready var anin = get_node("AnimatedSprite2D") 
 @onready var bullet1 = preload("res://Scences/UI/char_1_attack.tscn")
 @onready var bullet2 = preload("res://Scences/UI/char_2_attack.tscn")
@@ -9,6 +10,9 @@ extends CharacterBody2D
 const SPEED = 200.0
 const SHOOT_INTERVAL = 2
 var shoot_timer = 2
+
+func _ready():
+	camera.make_current()
 
 func _physics_process(delta: float) -> void:
 	var input_vector := Vector2(

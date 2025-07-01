@@ -23,6 +23,7 @@ ScoreManager="*res://Autoload/scoreManager.gd"
 
 window/size/viewport_width=750
 window/size/viewport_height=1334
+window/size/mode=2
 window/stretch/mode="viewport"
 
 [dotnet]
